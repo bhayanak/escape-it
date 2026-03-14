@@ -22,6 +22,15 @@ export class Input {
       e.preventDefault();
       this._handleTouch(e.touches);
       this.tapped = true;
+      // Set clickPos from first touch (same scaling as mousedown)
+      if (e.touches.length > 0) {
+        const rect = canvas.getBoundingClientRect();
+        const x = e.touches[0].clientX - rect.left;
+        const y = e.touches[0].clientY - rect.top;
+        const scaleX = canvas.width / rect.width;
+        const scaleY = canvas.height / rect.height;
+        this.clickPos = { x: x * scaleX, y: y * scaleY };
+      }
     });
     this._addListener(canvas, 'touchmove', e => {
       e.preventDefault();

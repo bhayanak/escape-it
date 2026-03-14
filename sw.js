@@ -1,4 +1,4 @@
-const CACHE_NAME = 'escape-it-v4';
+const CACHE_NAME = 'escape-it-v5';
 const ASSETS = [
   '/',
   '/index.html',
