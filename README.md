@@ -17,3 +17,6 @@ The ball bounces automatically. Time your movements to land on platforms, dodge 
 | ⭐⭐ | Collect all 3 star pickups |
 | ⭐⭐⭐ | Collect all stars AND finish under the time target |
 
+## Play
+https://bhayanak.github.io/escape-it/
+
